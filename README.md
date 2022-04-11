@@ -68,7 +68,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-6. Run Application at browser:
+6. Run Application at browser for documentation:
 ```sh
 http://127.0.0.1:5009/apidocs/
 ```
