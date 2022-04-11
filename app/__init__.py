@@ -30,7 +30,7 @@ SWAGGER_TEMPLATE ={
     "info":{
         "title": "Api Zumbie",
         "description": "Api Zumbie",
-        "version": "0.1.0",
+        "version": "1.0.0",
         "contact": {
             "name": "Julio Cartier",
             "url": ""

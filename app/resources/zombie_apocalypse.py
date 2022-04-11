@@ -69,7 +69,7 @@ class SurvivorsSearch(Resource):
 class SurvivorSearch(Resource):
     def post(self):
         """
-        Busca um Sobrvivente
+        Search a survivors
         ---
         tags:
           - Consultas
@@ -102,7 +102,7 @@ class SurvivorSearch(Resource):
 class SurvivorCreate(Resource):
     def post(self):
         """
-        Cria um Sobrvivente
+        Create a Survivors
         ---
         tags:
           - Consultas
@@ -144,7 +144,7 @@ class SurvivorMarker(Resource):
 
     def post(self):
         """
-        Adiciona um sobrivevente infectado
+        Add a infected survivors
         ---
         tags:
           - Consultas
@@ -194,7 +194,7 @@ class SurvivorMarker(Resource):
 class SurvivorNext(Resource):
     def post(self):
         """
-        Busca um Sobrvivente Mais Próximo
+        Look for a nearest survivor
         ---
         tags:
           - Consultas
@@ -231,7 +231,7 @@ class SurvivorUpdate(Resource):
 
     def put(self):
         """
-        Atualiza um Sobrvivente
+        Update a survivors
         ---
         tags:
           - Consultas
