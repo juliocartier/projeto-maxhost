@@ -32,8 +32,10 @@ class Survivors(db.Model):
     @classmethod
     def find_survivors(self, name):
         try:
+            # Search survivors for name
             survivors = db.session.query(Survivors.name).filter(Survivors.name==name).first()
 
+            #Case survivors exist return, case not return none
             if survivors:
                 return survivors
             return None
@@ -54,8 +56,10 @@ class Survivors(db.Model):
     @classmethod
     def find_survivors_id(self, id):
         try:
+            # Search survivors for id
             survivors = db.session.query(Survivors.name).filter(Survivors.id==id).first()
 
+            #Case survivors exist return, case not return none
             if survivors:
                 return survivors
             return None
@@ -64,6 +68,8 @@ class Survivors(db.Model):
 
     def find_survivors_next(self, name):
         try:
+            
+            #This SQL, looks for the closest survivors
             usuario_out = []
             #sql_engine = create_engine('sqlite:///C://projetos-pythons//projeto-maxhost//app//banco.db', echo=False)
             sql_engine = create_engine('sqlite:///'+ os.path.abspath(os.path.expanduser(os.path.expandvars('app/'))) + '/banco.db', echo=False)
@@ -98,6 +104,7 @@ class Survivors(db.Model):
 
     def update_survivors(self, id, name, gender, lat, lon):
         try:
+            #Update survivors
             db.session.query(Survivors).filter(Survivors.id==id).update({"name":name,
                                                                 "gender": gender,
                                                                 "lat": lat,
